@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-function _fogg_peers_profile {
-  local shome="${_fogg_peers_home:="$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
+function _fogg_peering_connection_profile {
+  local shome="${_fogg_peering_connection_home:="$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
   PATH="$shome/bin:$shome/exec:$PATH"
   #export ANSIBLE_ROLES_PATH="$shome/roles${ANSIBLE_ROLES_PATH:+:${ANSIBLE_ROLES_PATH}}"
   #export ANSIBLE_LIBRARY="$shome/library${ANSIBLE_LIBRARY:+:${ANSIBLE_LIBRARY}}"
 
-  FOGG_PEERS_VERSION='0.0.1'
+  FOGG_PEERING_CONNECTION_VERSION='0.0.1'
 }
 
-_fogg_peers_profile
+_fogg_peering_connection_profile
